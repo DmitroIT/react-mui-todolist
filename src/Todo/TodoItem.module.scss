@@ -1,0 +1,23 @@
+.Container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.Item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 50px;
+
+    border-bottom: 5px solid white;
+    background-color: rgb(245 251 245);
+
+    padding: 0 10px;
+
+}
+
+.BtnBox {
+    margin-right: 0;
+    margin-left: auto;
+}
+
