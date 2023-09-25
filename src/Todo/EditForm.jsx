@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Input from "@mui/material/Input";
 import Button from "@mui/material/Button";
 import { Dialog } from "@mui/material";
+import styles from './EditForm.module.scss';
 
 const EditForm = ({ editTodo, onSubmit, isOpen, onClose }) => {
     const [editName, setEditName] = useState(editTodo.title);
@@ -15,7 +16,7 @@ const EditForm = ({ editTodo, onSubmit, isOpen, onClose }) => {
                 onClose={() => onClose(false)}
                 open={isOpen}>
 
-                <form onSubmit={handleSubmitForm}>
+                <form className={styles.EditForm} onSubmit={handleSubmitForm}>
                     <h4>Edit todo</h4>
                     <Input
                         type="text"

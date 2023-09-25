@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Input from "@mui/material/Input";
 import Container from "@mui/material/Container";
 import { Dialog } from "@mui/material";
+import styles from './Todo.module.scss';
 
 
 
@@ -87,7 +88,7 @@ const Todo = () => {
                 onClose={() => setIsOpenModal(false)}
                 open={isOpenModal}
             >
-                <form onSubmit={handleFormSubmit}>
+                <form className={styles.TodoForm} onSubmit={handleFormSubmit}>
                     <h2>Add todo</h2>
 
                     <Input
